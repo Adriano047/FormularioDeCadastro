@@ -1,0 +1,162 @@
+:root {
+  --cor-texto: #28ff6f;
+  --cor-formulario: #2f2841;
+  --cor-campo: #514869;
+}
+*{
+  color: var(--cor-texto)
+  
+}
+/* estilo da parte de cima */
+.Header {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 17px;
+  font-family: monospace;
+}
+/* estilo dos dois lados */
+.Form{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* ajustando a imagem na div */
+.Card-esquerdo{
+  margin-left: 60px;
+  margin-top: 20px;
+  
+}
+img{
+  width: 500px; 
+  height: 600px;
+}
+/* estilo do formulario */
+.Card-direito {
+  /* background-color: MidnightBlue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  max-height: 610px;
+  margin: 0 auto;
+  border-radius: 2%;
+  border-color: black;
+  background-color: var(--cor-formulario);
+  width: 60vw;
+  box-shadow:  black 0px 2px 10px; ;
+}
+/* estilo da div que organiza os itens do formulario */
+.ItensForm {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 20px;
+  align-self: flex-start;
+  
+}
+.ItensForm h1 {
+  margin-bottom: 30px;
+  font-family: arial;
+}
+/* estilo dos itens do formulario  */
+.CampoTexto{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
+  
+}
+label {
+  margin-bottom: 40px;
+  font-size: 17px;
+  font-family: monospace;
+}
+.CampoDeTexto input, button {
+  color: white;
+  margin-bottom: 35px;
+  width: 95%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 12pt;
+  background-color: var(--cor-campo);
+  box-shadow: 0px 2px 5px black;
+}
+input::placeholder {
+  color: var(--cor-texto);
+  font-family: arial;
+
+}
+/* estilo do botão */
+button {
+  cursor: pointer;
+  width: 70%;
+  background-color: var(--cor-texto);
+  color: var(--cor-formulario);
+  font-family: helvetica;
+  box-shadow: #61ff96 2px 2px 3px 4px;
+}
+
+button:active {
+  background-color: white;
+  box-shadow: white 2px 2px 3px 4px;
+  color: black;
+}
+/* implementando responsividade */
+@media(max-width: 1074px) {
+  img{
+    width: 400px; 
+    height: 600px;
+  }
+  .Card-direito{
+    max-width: 450px;
+  }
+}
+@media(max-width: 924px) {
+  .Form{
+    margin-left: 200px;
+  }
+  .Card-direito{
+    margin-left: 50px;
+    max-width: 500px;
+  }
+  img{
+    height: 400px;
+  }
+}
+@media(max-width: 900px) {
+  .Header{
+    margin-left: 60px;
+  }
+}
+@media(max-width: 845px) {
+  .Form{
+    margin-left: 100px;
+  }
+}
+@media(max-width: 600px) {
+  img{
+    display: none;
+  }
+  .Form{
+    margin-left: 0px;
+  }
+}
+@media(max-width: 508px){
+  .ItensForm h1 {
+    font-size: 30px;
+  }
+}
+@media(max-width: 478px){
+  .ItensForm h1 {
+    font-size: 25px;
+  }
+}
+
+
+
+
